@@ -138,7 +138,7 @@ class SanPhamController extends Controller
            
         }
         //Sau khi thêm sản phẩm thì sẽ gửi mail thông tin sản phẩm đó về
-        Mail::to(Auth::user()->email)->send(new MailConfirm($sanPham));
+        // Mail::to(Auth::user()->email)->send(new MailConfirm($sanPham));
         $success = true;
        }else{
         // $variants = $request->input('variants');
